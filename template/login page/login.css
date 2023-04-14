@@ -1,3 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    margin: 30px;
+    text-align: center;
+    color: #f44336;
+    padding: 10px;
+}
+
 form {
     border: 1px solid #cbc9c9;
     border-radius: 10px;
@@ -8,11 +20,7 @@ form {
     box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
 }
 
-h3 {
-    text-align: center;
-    color: #f44336;
-}
-h2{
+h2 {
     color: #00968d;
 }
 
@@ -43,9 +51,10 @@ button:hover {
 .container {
     padding: 16px;
 }
-.container label b{
-padding-right: 330px;
-color: #00968d;
+
+.container label b {
+    padding-right: 330px;
+    color: #00968d;
 
 
 }
