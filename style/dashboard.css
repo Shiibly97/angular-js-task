@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.cards {
+    display: flex;
+}
+
+.card-name {
+    background: #d3dddb;
+    width: 13rem;
+    margin: 40px;
+    padding: 20px 25px;
+    border: 3px solid rgb(202, 201, 201);
+    border-top-color: red;
+    box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card-name .name .fa-id-card {
+    border: none;
+    font-size: 80px;
+    color: black;
+}
+
+.card-name .num .fa-phone {
+    border: none;
+    font-size: 80px;
+    color: black;
+}
+
+.card-name .fa-envelope {
+    border: none;
+    font-size: 80px;
+    color: black;
+}
+
+.card-name .fa-map-marker-alt {
+    border: none;
+    font-size: 80px;
+    color: black;
+    margin: 0px 0px 0px -50px;
+}
+
+hr {
+    width: 119%;
+    margin: 0px -28px;
+}
+
+.content p {
+    font-weight: bold;
+    color: #00968d;
+    text-align: left;
+}
+
+/* .card-client:hover {
+    transform: translateY(-10px);
+} */

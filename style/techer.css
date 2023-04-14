@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.teacher {
+    color: #00968c;
+}
+
+.teacher span {
+    color: red;
+    padding: 0px 10px;
+    font-weight: bold;
+}
+
+.teacher .title p {
+    font-weight: bold;
+}
+.teacher-data label {
+    margin: 10px;
+}
+.teacher .teacher-data table {
+    border-collapse: collapse;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    width: 90%;
+    text-align: center;
+}
+
+.teacher .teacher-data table tr th {
+    border: 1px solid black;
+    color: #145f62;
+    background-color: #b2dfdc;
+    padding: 5px;
+}
+
+.teacher .teacher-data table tr td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.delete-teacher {
+    background-color: #00968c;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.add-teacher button {
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    width: 10%;
+    border: none;
+}

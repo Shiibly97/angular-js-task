@@ -1,0 +1,45 @@
+<br>
+<div class="teacher">
+    <div class="title">
+        <p><span>|</span> Teachers</p>
+    </div>
+    <br>
+    <div class="teacher-data">
+        <label> <input type="checkbox" ng-model="hidePhoneNum"> Hide phone number</label>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First name</th>
+                    <th>Last name </th>
+                    <th ng-hide="hidePhoneNum">Phone number </th>
+                    <th ng-show="hidePhoneNum">Phone number </th>
+                    <th>E-mail</th>
+                    <th>Address</th>
+                    <th>Class</th>
+                    <th>Material</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="teacher in teachers">
+                    <td>{{teacher.id}}</td>
+                    <td>{{teacher.name}}</td>
+                    <td>{{teacher.lastname}}</td>
+                    <td ng-hide="hidePhoneNum">{{teacher.phonenum}}</td>
+                    <td ng-show="hidePhoneNum">●●●●●●</td>
+                    <td>{{teacher.email}}</td>
+                    <td>{{teacher.address}}</td>
+                    <td>{{teacher.class}}</td>
+                    <td>{{teacher.material}}</td>
+                    <td><button class="delete-teacher" ng-click="remove()"><i style="font-size:24px"
+                                class="fa">&#xf014; </i>
+                            {{teacher.action}}</button> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="add-teacher">
+        <button>+ Add</button>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<br>
+<div class="parent">
+    <div class="title">
+        <p><span>|</span> Parents</p>
+    </div>
+    <br>
+    <div class="parent-data">
+        <input type="text" placeholder="Search by name " ng-model="searchText.name">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First name</th>
+                    <th>Last name </th>
+                    <th>Phone number </th>
+                    <th>E-mail</th>
+                    <th>Address</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="parent in parents | filter:searchText">
+                    <td>{{parent.id}}</td>
+                    <td>{{parent.name}}</td>
+                    <td>{{parent.lastname}}</td>
+                    <td>{{parent.phonenum}}</td>
+                    <td>{{parent.email | uppercase}}</td>
+                    <td>{{parent.address}}</td>
+                    <td><button class="delete-parent"><i style="font-size:24px" class="fa">&#xf014; </i>
+                            {{parent.action}}</button> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="add-parent">
+        <button>+ Add</button>
+    </div>
+</div>

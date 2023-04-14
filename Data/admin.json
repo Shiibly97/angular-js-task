@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Test",
+        "lastname": "1",
+        "phonenum": "0798754732",
+        "email": "test@gmail.com",
+        "address": "Amman",
+        "user": "Test1",
+        "action": "Delete"
+    }
+]

@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.address {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.address ul {
+    display: flex;
+
+}
+
+.address ul li {
+    display: contents;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+
+}
+
+.address ul li p {
+    margin: 0px 5px;
+
+}
+
+.address ul li p span {
+    color: #009688;
+    margin: 5px;
+    padding: 5px;
+}
+
+.address  li .fa-map-marker,
+.fa-fax,
+.fa-phone,
+.fa-envelope {
+    font-size: 30px;
+    color: red;
+    border: 5px solid #009688;
+    text-align: center;
+    width: 60px;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.title {
+    color: #00968c;
+}
+.title span {
+    color: red;
+    padding: 0px 10px;
+    font-weight: bold;
+}
+
+.title p {
+    font-weight: bold;
+}
+.contact p {
+    font-weight: bold;
+    color: #00968c;
+
+}
+.text-box .form-control{
+    width: 50%;
+    margin: 0px 157px;
+}
+.inputs{
+    display: grid;
+    color: #009688;
+    font-weight: bold;
+
+
+}
+.inputs input{
+width: 50%;
+}
+
+
+ul li p a {
+    text-decoration: none;
+    color: #009688;
+    margin: 5px;
+    padding: 5px;
+}
+ul li p a:hover{
+    background-color: rgb(185, 181, 181);
+    border: 1px solid;
+    border: none;
+    border-radius: 3px;
+}
+.send-button{
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    width: 20%;
+    background-color: red;
+}
+.send-button:hover{
+    background-color:rgb(199, 196, 201);
+}

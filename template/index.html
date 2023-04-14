@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="/lib/script.js"></script>
+    <link rel="stylesheet" href="/style/home.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/techer.css">
+    <link rel="stylesheet" href="/style/parent.css">
+    <link rel="stylesheet" href="/style/admin.css">
+    <link rel="stylesheet" href="/style/contact.css">
+    <link rel="stylesheet" href="/style/dashboard.css">
+    <link rel="stylesheet" href="/style/students.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/a525a69fda.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+    <!-- Start Landing Page -->
+    <div class="header-area">
+        <div class="landin-page">
+            <ul class="links">
+                <li ng-class="{active:isActive('/home')}"> <a href="#!home"><i class="fa fa-home"></i>
+                        Home </a>
+                </li>
+                <li ng-class="{active:isActive('/dashboard')}"> <a href="#!dashboard"><i class="fa fa-tachometer" data
+                            is active aria-hidden="true"></i>
+                        Dashboard </a>
+                </li>
+                <li ng-class="{active:isActive('/parent')}"><a href="#!parent"><i class="fa fa-user"></i>
+                        Parent</a>
+                </li>
+                <li ng-class="{active:isActive('/teacher')}"><a href="#!teacher"> <i
+                            class="fas fa-chalkboard-teacher"></i>
+                        Teacher </a>
+                </li>
+                <li ng-class="{active:isActive('/student')}"><a href="#!student"><i style='font-size:24px'
+                            class='fas'>&#xf501;</i>
+                        Student </a>
+                </li>
+                <li ng-class="{active:isActive('/admin')}"><a href="#!admin"><i style='font-size:24px'
+                            class='fas'>&#xf21b;</i>
+                        Admin</a>
+                </li>
+                <li class="right"><a href="#!logout"> <i style="font-size:24px" class="fa">&#xf08b;</i>
+                        Logout</a></li>
+        </div>
+    </div>
+    </div>
+    <div class="introduction-text">
+        <ng-view></ng-view>
+    </div>
+    <div class="footer-area">
+        <div class="footer">
+            <p><a>Help</a> | <a href="#!contact"> Contact us</a> </p>
+            <p>Copyright <span>&copy</span> 2016 Blulogix, LLC. All Rights Reserved</p>
+        </div>
+    </div>
+    <!-- End   Landing Page -->
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+[
+    {
+        "id":1,
+        "name":"Ibrahim",
+        "lastname":"Shibly",
+        "phonenum":"079834213",
+        "email":"ibrahim@gmail.com",
+        "address":"Amman",
+        "action":"Delete"
+    }
+]

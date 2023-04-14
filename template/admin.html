@@ -1,0 +1,39 @@
+<br>
+<div class="admin">
+    <div class="title">
+        <p><span>|</span> Admin</p>
+    </div>
+    <br>
+    <div class="admin-data">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First name</th>
+                    <th>Last name </th>
+                    <th>Phone number </th>
+                    <th>E-mail</th>
+                    <th>Address</th>
+                    <th>User name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="admin in admins | filter:searchText">
+                    <td>{{admin.id}}</td>
+                    <td>{{admin.name}}</td>
+                    <td>{{admin.lastname}}</td>
+                    <td>{{admin.phonenum}}</td>
+                    <td>{{admin.email | uppercase}}</td>
+                    <td>{{admin.address}}</td>
+                    <td>{{admin.user}}</td>
+                    <td><button class="delete-admin"><i style="font-size:24px" class="fa">&#xf014; </i>
+                            {{admin.action}}</button> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="add-admin">
+        <button>+ Add</button>
+    </div>
+</div>
