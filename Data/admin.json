@@ -7,7 +7,6 @@
         "email": "test@gmail.com",
         "address": "Amman",
         "user": "Test1",
-        "action": "Delete",
-        "test" : "dsdsss"
+        "action": "Delete"
     }
 ]
