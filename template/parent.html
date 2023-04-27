@@ -1,4 +1,5 @@
-<br>
+<br><br>
+<br><br>
 <div class="parent">
     <div class="title">
         <p><span>|</span> Parents</p>
@@ -26,12 +27,14 @@
                     <td>{{parent.phonenum}}</td>
                     <td>{{parent.email | uppercase}}</td>
                     <td>{{parent.address}}</td>
-                    <td><button class="delete-parent"><i style="font-size:24px" class="fa">&#xf014; </i>
+                    <td><button ng-click="deleteRow($index)" class="delete-parent"><i style="font-size:24px"
+                                class="fa">&#xf014; </i>
                             {{parent.action}}</button> </td>
                 </tr>
             </tbody>
         </table>
     </div>
+
     <div class="add-parent">
         <button>+ Add</button>
     </div>

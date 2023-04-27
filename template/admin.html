@@ -1,4 +1,5 @@
-<br>
+<br><br>
+<br><br>
 <div class="admin">
     <div class="title">
         <p><span>|</span> Admin</p>
@@ -27,7 +28,8 @@
                     <td>{{admin.email | uppercase}}</td>
                     <td>{{admin.address}}</td>
                     <td>{{admin.user}}</td>
-                    <td><button class="delete-admin"><i style="font-size:24px" class="fa">&#xf014; </i>
+                    <td><button ng-click="deleteRow($index)" class="delete-admin"><i style="font-size:24px"
+                                class="fa">&#xf014; </i>
                             {{admin.action}}</button> </td>
                 </tr>
             </tbody>

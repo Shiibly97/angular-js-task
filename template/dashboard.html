@@ -1,51 +1,54 @@
-<br>
-<div class="title">
-    <p><span>|</span> Contact us</p>
-</div>
-<div class="cards" ng-repeat="dashboard in admins">
-<div class="card-name">
-    <div class="name">
-        <i class="fas fa-id-card"></i>
+
+<br><br>
+<br><br>
+<div>
+    <div class="title">
+        <p><span>|</span> Dashboard</p>
     </div>
-    <br>
-    <hr>
-    <br>
-    <div class="content" >
-        <p> Full name : {{dashboard.user}}</p>
+    <div class="cards" ng-repeat="dashboard in admins">
+        <div class="card-name">
+            <div class="name">
+                <i class="fas fa-id-card"></i>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="content">
+                <p> Full name : {{dashboard.user}}</p>
+            </div>
+        </div>
+        <div class="card-name">
+            <div class="email">
+                <i class="fa fa-envelope"></i>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="content">
+                <p> Email : {{dashboard.email}} </p>
+            </div>
+        </div>
+        <div class="card-name">
+            <div class="num">
+                <i class="fa fa-phone"></i>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="content">
+                <p> Phone number : {{dashboard.phonenum}}</p>
+            </div>
+        </div>
+        <br>
     </div>
-</div>
-<div class="card-name">
-    <div class="email">
-        <i class="fa fa-envelope"></i>
+    <div class="card-name" ng-repeat="dashboard in admins">
+        <div class="address">
+            <i class='fas fa-map-marker-alt'></i>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="content">
+            <p> Address : {{dashboard.address}}</p>
+        </div>
     </div>
-    <br>
-    <hr>
-    <br>
-    <div class="content">
-        <p> Email : {{dashboard.email}} </p>
-    </div>
-</div>
-<div class="card-name">
-    <div class="num">
-        <i class="fa fa-phone"></i>
-    </div>
-    <br>
-    <hr>
-    <br>
-    <div class="content">
-        <p> Phone number : {{dashboard.phonenum}}</p>
-    </div>
-</div>
-<br>
-</div>
-<div class="card-name" ng-repeat="dashboard in admins">
-    <div class="address">
-        <i class='fas fa-map-marker-alt' ></i>
-    </div>
-    <br>
-    <hr>
-    <br>
-    <div class="content">
-        <p>  Address : {{dashboard.address}}</p>
-    </div>
-</div>

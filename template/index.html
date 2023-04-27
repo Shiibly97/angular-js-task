@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="/lib/app-modules.js"></script>
+    <script src="/components /js/bloglist.module.js"></script>
+    <script src="/components /js/bloglist.component.js"></script>
     <script src="/lib/script.js"></script>
-    <link rel="stylesheet" href="login page/login.css">
+    <script src="/lib/dashboard.js"></script>
+    <script src="/lib/admin.js"></script>
+    <script src="/lib/parent.js"></script>
+    <script src="/lib/students.js"></script>
+    <script src="/lib/teacher.js"></script>
+    <script src="/lib/contact.js"></script>
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/techer.css">
     <link rel="stylesheet" href="/style/parent.css">
@@ -47,7 +55,8 @@
                             class='fas'>&#xf21b;</i>
                         Admin</a>
                 </li>
-                <li class="right"><a href="#!logout"> <i style="font-size:24px" class="fa">&#xf08b;</i>
+                <li class="right"><a href="#!logout" ng-click="logOut(des)"> <i style="font-size:24px"
+                            class="fa">&#xf08b;</i>
                         Logout</a></li>
         </div>
     </div>

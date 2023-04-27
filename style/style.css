@@ -8,6 +8,11 @@ html {
     min-height: 0vh;
 }
 
+.header-area {
+    position: fixed;
+    width: 100%;
+}
+
 .landin-page {
     background-color: #00968c;
     color: white;
