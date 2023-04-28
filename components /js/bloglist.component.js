@@ -1,6 +1,6 @@
 angular.module('blogList', [])
     .component('blogList', {
-        templateUrl: '/components /html/posts-list.html',
+        templateUrl: '../components /html/posts-list.html',
         controller: function ($http, $scope, $log) {
 
             var successCallBack = function (response) {
@@ -13,7 +13,7 @@ angular.module('blogList', [])
             }
             $http({
                 method: 'GET',
-                url: '/Data/teacher.json'
+                url: '../Data/teacher.json'
             })
                 .then(successCallBack, errorCallBack)
             $scope.deleteRow = function (index) {
