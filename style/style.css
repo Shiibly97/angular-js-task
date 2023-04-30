@@ -9,8 +9,12 @@ html {
 }
 
 .header-area {
-    position: fixed;
+    position: sticky;
     width: 100%;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+
 }
 
 .landin-page {
