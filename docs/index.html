@@ -6,8 +6,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script src="../lib/app-modules.js" type="text/javascript"></script>
-    <script src="../components /js/bloglist.module.js" type="text/javascript"></script>
-    <script src="../components /js/bloglist.component.js" type="text/javascript"></script>
+    <script src="../components /js/blog list/bloglist.module.js" type="text/javascript"></script>
+    <script src="../components /js/blog list/bloglist.component.js" type="text/javascript"></script>
+    <script src="../components /js/header/header.module.js"></script>
+    <script src="../components /js/header/header-list.js"></script>
     <script src="../lib/script.js" type="text/javascript"></script>
     <script src="../lib/dashboard.js" type="text/javascript"></script>
     <script src="../lib/admin.js" type="text/javascript"></script>
@@ -33,35 +35,9 @@
 
 <body>
     <!-- Start Landing Page -->
-    <div class="header-area">
-        <div class="landin-page">
-            <ul class="links">
+    <header-list>
 
-                <li ng-class="{active:isActive('/dashboard')}"> <a href="#!dashboard"><i class="fa fa-tachometer" data
-                            is active aria-hidden="true"></i>
-                        Dashboard </a>
-                </li>
-                <li ng-class="{active:isActive('/parent')}"><a href="#!parent"><i class="fa fa-user"></i>
-                        Parent</a>
-                </li>
-                <li ng-class="{active:isActive('/teacher')}"><a href="#!teacher"> <i
-                            class="fas fa-chalkboard-teacher"></i>
-                        Teacher </a>
-                </li>
-                <li ng-class="{active:isActive('/student')}"><a href="#!student"><i style='font-size:24px'
-                            class='fas'>&#xf501;</i>
-                        Student </a>
-                </li>
-                <li ng-class="{active:isActive('/admin')}"><a href="#!admin"><i style='font-size:24px'
-                            class='fas'>&#xf21b;</i>
-                        Admin</a>
-                </li>
-                <li class="right"><a href="#!logout" ng-click="logOut(des)"> <i style="font-size:24px"
-                            class="fa">&#xf08b;</i>
-                        Logout</a></li>
-        </div>
-    </div>
-    </div>
+    </header-list>
     <div class="introduction-text">
         <ng-view></ng-view>
     </div>
